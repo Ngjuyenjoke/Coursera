@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating</title>
+
+<style>
+    * {box-sizing: border-box;}
+
+    div {background-color: lightblue;}
+
+    #p1, #p2, #p3 {width: 50px;
+    height: 50px;
+    float: left;}
+    
+    #p1 {
+    background-color: orange;
+    }
+
+    #p2 {
+    background-color: red;
+    }
+
+    #p3 {
+    background-color: green;
+    }
+
+    section {
+    margin: 50px;
+    }
+
+    #p4, #p5 {width: 50%;
+    float: left;
+    padding: 10px;}
+
+    #p4 {clear: left;}
+
+    div.rel_abs_pos {
+        clear: both;
+        position: relative;
+        /* top: 10px; */
+    }
+
+    div.rel_abs_pos p {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #p6 {
+    background-color: orange;
+    position: relative;
+    top: 50px;
+    left: 60px;
+    }
+
+    #p7 {
+    background-color: red;
+    }
+
+    #p8 {
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+   
+</style>
+</head>
+
+<body>
+
+<h>
+    Position by floating
+</h>
+
+<div>
+    <p id = "p1"></p>
+    <p id = "p2"></p>
+    <p id = "p3"></p>
+    <section>This is testing</section>
+</div>
+    
+<div>
+    <p id = "p4">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <p id="p5">
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+</div>
+
+<div class = "rel_abs_pos">
+    <p id = "p6"> </p>
+    <p id = "p7"> </p>
+    <p id = "p8"> </p>
+</div>
+</body>
+</html>
